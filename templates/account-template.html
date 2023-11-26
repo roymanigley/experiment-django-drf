@@ -1,0 +1,8 @@
+{% extends "base-template.html" %}
+{% block content %}
+    <h1>Hello {{ user.username }}</h1>
+    <details>
+        <summary><span style="display: inline-flex">Debug Info <i class="material-icons">code</i></span></summary>
+        <pre>{% debug %}</pre>
+    </details>
+{% endblock content %}
